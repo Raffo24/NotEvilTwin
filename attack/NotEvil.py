@@ -3,6 +3,7 @@ import sys
 from scapy.all import *
 from scapy.layers.dot11 import Dot11, Dot11Beacon, Dot11Elt 
 #from playsound import playsound
+#bellla rafooffox
 
 
 # import json
