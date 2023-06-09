@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)https://colossus.di.uniroma1.it:8003/index.php?zone=cp_colossus&redirurl=http%3A%2F%2Fwww.msftconnecttest.com%2Fredirect -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Dipartimento di Informatica: accesso alla rete Internet</title>
+
+    <link rel="stylesheet" href="./Dw_files/captiveportal-pure-min.css">
+<style type="text/css">
+
+body { background-color:#822433; font-size:12px; }
+
+.regolamento { font-size:14px; overflow-y:scroll; resize:vertical; height: 100px; }
+
+textarea { width: 100%; }
+
+a,a:hover { font-size:14px; color:#822433;
+    text-decoration:none; }
+
+.logo {
+	margin: auto;
+	margin-top:20px;
+    margin-bottom:20px;
+	width: 800px;
+	text-align: left;
+}
+
+.pagecontainer {
+	margin: auto;
+	width: 800px; background-color:#fff;
+	border-radius: 25px;
+	}
+	
+h4 { font-size:14px; color: #822433; }
+
+h3 { font-size:18px; color: #822433; }
+
+
+.footer {
+    margin-top:20px;
+    margin-bottom:40px;
+    margin-right:10px;
+    text-align:center; font-size:14px; color:#fff;
+    }
+
+</style>
+
+<script src="./Dw_files/captiveportal-jquery-2.1.1.min.js.download"></script>
+
+<script>
+
+$( document ).ready(function() {
+
+    $("#regolamentouni").click( function () {
+        
+		$(this).height(480);
+    });
+    
+    $("#regolamentouni").focusout( function () {
+        
+		$(this).height(100);
+    });
+     
+ 	$("#regolamentodip").click( function () {
+        
+		$(this).height(480);
+    });
+    
+    $("#regolamentodip").focusout( function () {
+        
+		$(this).height(100);
+    });
+    
+    $("#trattamentodati").click( function () {
+        
+		$(this).height(480);
+    });
+    
+    $("#trattamentodati").focusout( function () {
+        
+		$(this).height(100);
+    });     
+     
+});
+
+</script></head>
+
+
+
+
+<body>
+
+    <div class="logo">
+
+        <img src="./Dw_files/captiveportal-logo_dipartimento.png">
+    
+    </div>
+
+    <div class="pagecontainer">
+    
+
+    <div class="pure-g">
+    
+        <div class="pure-u-1-24">&nbsp;</div>
+
+        <div class="pure-u-22-24">
+
+        <h3>Laboratori Dipartimento Informatica</h3>
+            
+        <div>
+        <br>
+        Per effettuare il <b>login</b>, inserire nome utente e password.
+        <br><br>
+        Le credenziali di accesso sono quelle rilasciati dai servizi Sapienza. Il nome
+        utente è il numero di <b>matricola</b>  
+        per gli studenti e <b>nome.cognome</b> per tutti gli utenti del dominio di posta<b>@uniroma1.it</b>.
+        <br><br>
+
+        </div>
+        
+
+            <form class="pure-form pure-form-stacked" method="post" action="https://colossus.di.uniroma1.it:8003/index.php?zone=cp_colossus" onsubmit="return CheckBoxesValidations();">
+                  
+                
+                <div class="pure-u-1-2">
+        		<input class="pure-input-1" id="auth_user" name="auth_user" type="text" placeholder="Nome utente">
+    			</div>
+    			<div class="pure-u-1-2">
+       			<input class="pure-input-1" id="auth_pass" name="auth_pass" type="password" placeholder="Password">
+   				</div>
+                
+                <input name="auth_voucher" type="hidden">
+                
+                <input name="redirurl" type="hidden" value="http://www.uniroma1.it">
+
+
+<h4>Informativa sul trattamento dei dati ai sensi del Regolamento UE n. 679/2016 e della vigente normativa nazionale.</h4>
+
+<textarea id="trattamentodati" name="trattamentodati" class="regolamento" readonly="yes">I sistemi informatici e le procedure software preposte al funzionamento  della rete di Dipartimento acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell’uso dei protocolli di comunicazione di Internet o è utilizzata per migliorare la qualità del servizio offerto.
+Si tratta di informazioni che non sono raccolte per essere associate a interessati identificati, ma che per loro stessa natura potrebbero, attraverso elaborazioni ed associazioni, permettere di identificare gli utenti.
+
+In questa categoria di dati rientrano:
+- il nome utente utilizzato nella fase di login;
+- gli indirizzi IP, indirizzi MAC o i nomi a dominio dei computer utilizzati dagli utenti che si connettono alla rete;
+- gli indirizzi in notazione URI (Uniform Resource Identifier) delle risorse richieste;
+- l'orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server;
+- altri parametri relativi al funzionamento dei protocolli di rete.
+
+Tali dati sono conservati per un periodo non inferiore a 6 mesi, salvo diverse disposizioni previste dalla normativa vigente. Questi dati vengono utilizzati al fine di ricavare informazioni statistiche anonime sull'uso della rete e per controllare il corretto funzionamento dei sistemi informatici.
+I dati potrebbero essere utilizzati altresì per l’accertamento di responsabilità in caso di ipotetici reati informatici o nel caso in cui si verifichino dei danni in capo all’Ateneo o in capo a terzi.
+</textarea>
+	<br>
+
+    
+    <input id="GDPR" type="checkbox" name="CHKBOX3" value="1"> Ho letto e accetto il regolamento<p></p> 
+                
+
+          <h4>Regolamento generale per l’utilizzo della rete telematica di Sapienza Università di Roma</h4>
+            <textarea id="regolamentouni" name="regolamentouni" class="regolamento" readonly="yes">    
+PREMESSA
+
+Sapienza Università di Roma (di seguito indicata come Sapienza) riconosce il ruolo centrale e strategico della rete informatica come strumento essenziale per il miglioramento dei servizi offerti e per il perseguimento dei propri obiettivi scientifici, didattici ed amministrativi. Sapienza, nel favorire l’uso della rete da parte di tutte le sue componenti istituzionali, emana il presente Regolamento che definisce le regole per la gestione e l’utilizzo dei servizi di rete di Ateneo.
+
+INDICE
+
+Art. 1 – Definizioni
+Art. 2 – Strutture collegate alla rete di trasmissione di Sapienza
+Art. 3 – Utenti della rete di trasmissione di Sapienza
+Art. 4 – Utilizzo della rete e regole di accesso
+Art. 5 – Abusi nell’utilizzo della rete
+Art. 6 – Struttura per la gestione ed il controllo
+
+Art. 1 - Definizioni
+
+1. La rete di trasmissione dati di Sapienza rappresenta lo strumento di collegamento delle risorse informatiche universitarie alla rete scientifica nazionale GARR.
+
+2. Sapienza sviluppa e gestisce la rete di trasmissione per le strutture scientifiche, didattiche e amministrative ad essa afferenti.
+
+3. La rete trasmissione dati di Sapienza è un servizio all’utenza scientifica, didattica e amministrativa; l’utilizzo della rete è regolato dagli articoli seguenti e dalle decisioni degli Organi di Governo nel rispetto delle norme di legge vigenti.
+
+Art. 2 - Strutture collegate alla rete di trasmissione di Sapienza
+
+Sono collegate alla rete di trasmissione di Sapienza:
+
+1. Strutture didattiche, di ricerca ed amministrative di Sapienza.
+
+2. Soggetti partecipati da Sapienza richiedenti il collegamento.
+
+3. Enti esterni a Sapienza. Le modalità di connessione saranno disciplinate da una convenzione, sottoscritta tra le parti ed approvata dagli Organi di Governo dell’Università, comprovante la collaborazione e l’utilità del collegamento. Gli Enti esterni non potranno accedere alla Rete GARR se non preventivamente autorizzati.
+
+Tutte le strutture elencate nei punti precedenti dovranno nominare un referente di rete, che avrà il ruolo di interfaccia verso Infosapienza.
+
+Art. 3 - Utenti della rete di trasmissione di Sapienza
+
+Possono avere accesso alla rete di trasmissione di Sapienza per scopi didattici, di ricerca ed amministrativo-gestionale, compatibilmente con le risorse disponibili le seguenti figure:
+
+1. Personale docente, tecnico-amministrativo e bibliotecario di Sapienza, gli studenti, i dottorandi di ricerca, i titolari di borse post-dottorato e di assegni di ricerca, gli specializzandi.
+
+2. Professori a contratto, i professori visitatori, i collaboratori esterni impegnati nelle attività istituzionali svolte da Sapienza, per il periodo di tempo necessario all’espletamento dei loro compiti all’interno dell’Università, previa autorizzazione.
+
+3. Organizzazioni Sindacali Locali riconosciute che ne facciano domanda al Rettore tramite il rappresentante dell’Organizzazione Sindacale Locale che si renda responsabile dell’utilizzo della connessione e/o della casella di posta elettronica.
+
+4. Associazione studentesche riconosciute che ne facciano domanda al Rettore tramite il Presidente dell’Associazione che si renda responsabile dell’utilizzo della connessione.
+
+5. Ogni altra categoria di persone autorizzata dagli Organi di Governo, che determineranno anche le regole per l’autorizzazione.
+
+Art. 4 - Utilizzo della rete e regole di accesso
+
+1. Qualsiasi accesso alla rete deve essere associato ad una persona fisica attraverso la registrazione di un indirizzo IP fisso. Alla predetta persona fisica saranno riconducibili le attività svolte dall’indirizzo IP di cui è responsabile.
+
+2. La richiesta di accesso comporta l’esplicita accettazione delle norme GARR, del presente regolamento, nonché la totale assunzione di responsabilità delle attività svolte tramite la rete. L’uso della rete è in ogni caso soggetto alle norme di legge vigenti.
+
+3. La rete trasmissione di Sapienza può essere utilizzata esclusivamente per l’attività didattica, scientifica e strumentale d’interesse dell’Università.
+
+4. Ogni utente della rete sarà identificato e sarà tenuto ad adottare le necessarie misure per non interferire nel corretto funzionamento delle comunicazioni, per garantire l’integrità dei sistemi e l’accesso alle risorse da parte degli altri utenti ed evitare che le attività svolte producano disturbo o danni agli altri utenti. Ogni illecito o abuso riscontrato sarà oggetto di successivi provvedimenti sanzionatori.
+
+5. In casi di interventi tecnici urgenti ed improcrastinabili, le connessioni alla rete potranno essere interrotte senza preavviso.
+
+6. Se l’utente non utilizzerà l’indirizzo IP a lui assegnato per 90 giorni, la Sapienza provvederà a recuperare il suddetto IP bloccando ogni tipo di accesso alla rete. L’utente con l’IP bloccato dovrà compilare una nuova richiesta IP.
+
+7. Qualora l’utente volesse cessare di utilizzare un indirizzo IP a lui assegnato dovrà effettuarne la rinuncia tramite apposita procedura. Rimarrà responsabile dell’indirizzo IP fino a tale richiesta, o in caso di inattività fino allo scadere dei 90 giorni.
+
+Art. 5 - Abusi nell’utilizzo della rete
+
+Costituisce abuso nell’utilizzo della rete trasmissione dati di Sapienza:
+
+1. Qualsiasi atto che possa compromettere la sicurezza delle risorse informatiche e la riservatezza delle informazioni di Sapienza o di altri Enti.
+
+2. L’accesso, l’utilizzo, la distruzione, l’alterazione o la disabilitazione non autorizzata di risorse informatiche, anche per mezzo di chiavi di accesso (password, badge, ecc.) rese disponibili ad altri soggetti, nonché l’abbandono senza custodia di stazioni di lavoro.
+
+3. La duplicazione, l’archiviazione e l’uso di software su qualsiasi risorsa informatica di Sapienza in violazione a disposizioni contrattuali.
+
+4. L’utilizzo per scopi d’interesse esclusivamente privato di qualsiasi risorsa informatica di Sapienza.
+
+5. Qualsiasi atto che, tramite la rete telematica di Sapienza, possa recare disturbo o danni a terzi.
+
+6. L’uso di dati o di altre risorse informatiche per scopi non consentiti dalle norme di leggi vigenti o in contrasto con quanto disciplinato nel presente regolamento.
+
+L’uso personale della rete è tollerato purché:
+
+1. Non sia a detrimento dei compiti istituzionali.
+
+2. Non costituisca un’attività commerciale o comunque con profitto.
+
+3. Non sia offensiva.
+
+4. Non violi le norme e le leggi in vigore.
+
+In caso di abuso, secondo la gravità del medesimo e fatte salve le ulteriori conseguenze di natura penale, civile ed amministrativa, gli organi responsabili delle risorse informatiche potranno adottare provvedimenti che ne limiteranno l’uso.
+
+L’inosservanza del presente regolamento o, in ogni caso, l’adozione di comportamenti che possano compromettere il funzionamento della rete, saranno segnalati all’utente che sarà richiamato al rispetto delle condizioni d’uso.
+
+Nel caso di abusi che rientrino nei punti del presente articolo saranno adottati i necessari provvedimenti urgenti, incluso il temporaneo distacco o la revoca dell’accesso alla rete.
+
+Qualora il comportamento dell’utente violi le norme di legge e/o causi danni di qualunque natura (economici, d’immagine, violazione della privacy, ecc.) potranno essere adottati provvedimenti disciplinari, amministrativi o legali.
+
+Art. 6 - Struttura per la gestione ed il controllo
+
+Al Settore Reti Periferiche del Centro Infosapienza sono demandate l’applicazione delle regole tecniche di gestione della rete e la verifica dell’osservanza del presente regolamento.
+
+Ha il compito di pianificare, sviluppare, monitorare e di curare il mantenimento delle reti informatiche universitarie.
+
+</textarea>
+<br>
+	<div align="right"><a href="https://colossus.di.uniroma1.it:8003/captiveportal-regolamento-generale-sapienza.pdf"><img src="./Dw_files/captiveportal-pdf.png" align="middle"> Versione stampabile</a></div>
+    <input id="iagree" type="checkbox" name="CHKBOX1" value="1"> Ho letto e accetto il regolamento
+
+<h4>Regolamenti laboratori dipartimento informatica</h4>
+
+<textarea id="regolamentodip" name="regolamentodip" class="regolamento" readonly="yes">Il Dipartimento ed il personale addetto adotta le precauzioni che ritiene opportune ed applicabili per prevenire eventi che possano causare interruzione di servizi, la perdita o la diffusione non autorizzata di dati. Tuttavia, non si puo' escludere che tali eventi possano avvenire. 
+L'utente si dichiara consapevole di cio' e provvedera' quindi ad organizzarsi di conseguenza, non potra' pretendere da questa Universita', dal Dipartimento o dal personale addetto, alcun tipo di risarcimento, ne' avanzare contro di essi alcuna azione di tipo amministrativo e/o penale per eventuali simili danni che ritiene possa aver subito.
+
+Il richiedente dichiara inoltre di aver preso visione, letto, compreso ed accettato, impegnandosi a rispettare, i seguenti regolamenti e tutti gli eventuali altri regolamento a cui fanno riferimento:
+- Regolamento Laboratori V200905A
+- Regolamento Servizi V200906A
+- Uso del Videoterminale e Visita medica
+- Acceptable Use Policy Garr
+</textarea>
+	<br>
+	
+    
+    <input id="regint" type="checkbox" name="CHKBOX2" value="1"> Ho letto e accetto il regolamento<p></p>
+    
+
+<input name="accept" type="submit" class="pure-button pure-button-active" value="Accedi">
+</form>
+<br><br>
+        </div> <!-- chiusura seconda colonna-->
+
+<div class="pure-u-1-24">&nbsp;</div> <!--chiusura terza colonna  -->
+
+    </div> <!-- Chiusura gruppo colonne -->
+
+
+    
+</div> <!--  Chiusura page container -->
+
+<div class="pure-g">
+
+        <div class="pure-u-1-1 footer">
+Dipartimento di Informatica - via Salaria, 113 00198 Roma<br>Centro di calcolo - tecnici@di.uniroma1.it
+        </div>
+</div>
+
+
+<script type="text/javascript">
+function CheckBoxesValidations()
+{
+if(	document.getElementById('iagree').checked == false ||
+	document.getElementById('regint').checked == false ||
+	document.getElementById('GDPR').checked == false)
+{
+alert("Leggi e accetta i regolamenti prima di procedere\n\nPlease read and accept the User agreements to proceed!");
+return false;
+}
+else
+return true;
+}
+</script>
+
+
+</body></html>
